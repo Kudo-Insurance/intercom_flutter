@@ -19,7 +19,7 @@ class SampleApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Intercom example app'), 
+          title: const Text('Intercom example app'),
         ),
         body: Center(
           child: TextButton(

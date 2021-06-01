@@ -128,8 +128,8 @@ id unread;
         }
     }
     else if([@"displayCarousel" isEqualToString:call.method]) {
-        NSString *carouselID = call.arguments[@"carouselID"];
-        [Intercom presentCarousel:@"19831000"];
+        NSString *carouselID = call.arguments[@"carouselId"];
+        [Intercom presentCarousel:carouselID];
        result(@"Presented carousel");
     }
     else {
