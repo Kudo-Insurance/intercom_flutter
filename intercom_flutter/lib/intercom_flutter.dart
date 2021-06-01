@@ -128,4 +128,12 @@ class Intercom {
   static Future<void> handlePush(Map<String, dynamic> message) async {
     return IntercomFlutterPlatform.instance.handlePush(message);
   }
+
+  static Future<void> displayArticle(String articleId) async {
+    return IntercomFlutterPlatform.instance.displayArticle(articleId);
+  }
+
+  static Future<void> displayCarousel(String carouselId) async {
+    return IntercomFlutterPlatform.instance.displayCarousel(carouselId);
+  }
 }

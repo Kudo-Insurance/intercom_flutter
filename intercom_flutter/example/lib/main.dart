@@ -14,15 +14,17 @@ void main() async {
 class SampleApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    Intercom.registerIdentifiedUser(email: 'test@getnada.com');
+
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Intercom example app'),
+          title: const Text('Intercom example app'), 
         ),
         body: Center(
           child: TextButton(
             onPressed: () {
-              Intercom.displayMessenger();
+              Intercom.displayCarousel('19831000');
             },
             child: Text('Show messenger'),
           ),

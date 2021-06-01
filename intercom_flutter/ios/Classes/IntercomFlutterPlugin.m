@@ -127,6 +127,11 @@ id unread;
             result(@"Token set");
         }
     }
+    else if([@"displayCarousel" isEqualToString:call.method]) {
+        NSString *carouselID = call.arguments[@"carouselID"];
+        [Intercom presentCarousel:@"19831000"];
+       result(@"Presented carousel");
+    }
     else {
         result(FlutterMethodNotImplemented);
     }
